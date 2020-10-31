@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           To Do List
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+       <div class="header">
+           <div class="header-title">MY TODO</div>
+           <button class="header-btn" onclick="getQuote()">ADD NEW</button>
+       </div>
+       <div class="container">
+           <div class="list-header">
+               
+           </div>
+           <ul class="list-container">
+               <li class="list-item">
+                    <input type="checkbox" id="list-item1" class="checkbox-item">   
+                    <label for="list-item1">Meet omkar for UI/UIX discussion</label>                  
+                </li>
+                <li class="list-item">
+                    <input type="checkbox" id="list-item2" class="checkbox-item">   
+                    <label for="list-item2">Darena bug fixing</label>
+                </li>    
+           </ul>
+
+           <div class="add-item-container">
+               <form action="post" class="form">
+                 <textarea id="todo-item" class="todo-textarea">Type here your todo item
+                 </textarea>
+                 <button class="header-btn m-8">Add</button>
+               </form>
+           </div>
+           <div class="quotes-container">
+               <div class="quote">
+               "<span id="quote-item"></span>"
+               </div>
+               <div class="author-name">
+                - <span id="author-item"></span>
+               </div>
+           </div>
+       </div>
+       <script>
+           getQuote();
+       </script>
+    </body>
+</html>
